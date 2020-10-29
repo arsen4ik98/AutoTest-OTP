@@ -1,0 +1,9 @@
+C:\Users\Arsen\Desktop\Tests1\Tests1\obj\Debug\Tests1.csprojResolveAssemblyReference.cache
+C:\Users\Arsen\Desktop\Tests1\Tests1\bin\Debug\Tests1.dll
+C:\Users\Arsen\Desktop\Tests1\Tests1\bin\Debug\Tests1.pdb
+C:\Users\Arsen\Desktop\Tests1\Tests1\bin\Debug\nunit.framework.dll
+C:\Users\Arsen\Desktop\Tests1\Tests1\bin\Debug\WebDriver.dll
+C:\Users\Arsen\Desktop\Tests1\Tests1\bin\Debug\nunit.framework.xml
+C:\Users\Arsen\Desktop\Tests1\Tests1\bin\Debug\WebDriver.xml
+C:\Users\Arsen\Desktop\Tests1\Tests1\obj\Debug\Tests1.dll
+C:\Users\Arsen\Desktop\Tests1\Tests1\obj\Debug\Tests1.pdb
