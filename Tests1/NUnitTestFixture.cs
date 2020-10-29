@@ -12,16 +12,14 @@ namespace Tests1
         [Test]
         public void Test()
         {
+            
             driver = new OpenQA.Selenium.Chrome.ChromeDriver();
-            driver.Navigate().GoToUrl("https://www.yandex.ru");
             driver.Manage().Window.Maximize();
-            var marketButton = driver.FindElement(By.XPath("//div[text()='Маркет']"));
-            marketButton.Click();
+            driver.Navigate().GoToUrl("https://www.yandex.ru");
+            driver.FindElement(By.XPath("//div[text()='Маркет']")).Click();
             driver.SwitchTo().Window(driver.WindowHandles.ToList().Last());
-            IWebElement findtext = driver.FindElement(By.XPath("//input[@class='nQ8aBP7fBN']"));
-            findtext.SendKeys("ноутбук xiaomi redmibook");
-            var find = driver.FindElement(By.XPath("//button[@type='submit']"));
-            find.Click();
+            driver.FindElement(By.XPath("//input[@class='nQ8aBP7fBN']")).SendKeys("ноутбук xiaomi redmibook");
+            driver.FindElement(By.XPath("//button[@type='submit']")).Click();
             System.Threading.Thread.Sleep(500);
             var check = driver.FindElement(By.XPath("//span[@class='NVoaOvqe58']"));
             if (!check.Selected)
@@ -30,7 +28,7 @@ namespace Tests1
             }
             System.Threading.Thread.Sleep(1000);
             ((ITakesScreenshot)driver).GetScreenshot().SaveAsFile("Test.jpg", ScreenshotImageFormat.Jpeg);
-            
+
         }
     }
 }
